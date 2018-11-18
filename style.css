@@ -73,3 +73,6 @@ a {
 .topNavBar .logo .card {
   color: #9a9da2;
 }
+.banner {
+  background: url("./img/rs-cover.jpg");
+}

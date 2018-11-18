@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    .outer {
+      position: relative;
+      margin: 100px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      overflow: hidden;
+
+    }
+
+    .outer .write {
+      position: relative;
+      background-color: white;
+      height: 50%;
+    }
+    .outer .write .blackCircle {
+      position: absolute;
+      top: 75px;
+      width: 30px;
+      height: 30px;
+      border: 60px solid black;
+      background-color: white;
+      border-radius: 50%;
+      z-index: 100;
+    }
+
+    .outer .black {
+      position: relative;
+      background-color: black;
+      height: 50%;
+    }
+    .outer .black .whiteCircle {
+      position: absolute;
+      top: -75px;
+      left: 150px;
+      width: 30px;
+      height: 30px;
+      border: 60px solid white;
+      background-color: black;
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="outer">
+  <div class="write">
+    <div class="blackCircle">
+    </div>
+  </div>
+  <div class="black">
+    <div class="whiteCircle"></div>
+  </div>
+</div>
+
+
+</body>
+</html>
